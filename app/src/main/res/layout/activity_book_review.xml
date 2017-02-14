@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7CCC8"
+    android:orientation="vertical"
+    tools:context="com.example.techlap.booksharingapp.BookReviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <include layout="@layout/app_bar"
+            android:id="@+id/app_bar"
+            ></include>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Add_Review_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Review"
+        android:textColorHint="#1A237E"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:inputType="textMultiLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Rate: "
+            android:id="@+id/Rating_textView"
+            android:layout_below="@+id/rating_bar"
+            android:layout_alignLeft="@+id/rating_bar"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_alignStart="@+id/rating_bar" />
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="1"
+            android:stepSize="1" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Add_Review_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8D6E63"
+        android:textColor="#b9b8b4"
+        android:layout_below="@id/Add_Review_view"
+        android:layout_centerInParent="true"
+        android:text="Add Review" />
+
+</LinearLayout>

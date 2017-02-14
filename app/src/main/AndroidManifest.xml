@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.techlap.booksharingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".BookSharingApp"
+        android:allowBackup="true"
+        android:icon="@drawable/cover"
+        android:label="Bookish"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LogInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SetUpActivity" />
+        <activity android:name=".BookReviewActivity" />
+        <activity android:name=".AddBookActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".BookDescriptionActivity" />
+        <activity android:name=".ReadListActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEBE9"
+    tools:context="com.example.techlap.booksharingapp.AddBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <include layout="@layout/app_bar"
+            android:id="@+id/app_bar"
+            ></include>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book name:"
+                android:textStyle="bold"
+                android:textColor="#8D6E63"
+                android:textSize="22sp" />
+            <EditText
+                android:id="@+id/bookname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author name:"
+                android:paddingTop="30dp"
+                android:textColor="#8D6E63"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <EditText
+                android:id="@+id/authorname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book description:"
+                android:paddingTop="30dp"
+                android:textStyle="bold"
+                android:textColor="#8D6E63"
+                android:textSize="22sp"/>
+            <EditText
+                android:id="@+id/bookdescription"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lines="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cover image: "
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#8D6E63"
+                />
+            <Button
+                android:id="@+id/BrowseforCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse"
+                android:textSize="14dp"
+                android:textColor="#FFFF"
+                android:background="#8D6E63"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pdf file: "
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:textStyle="bold"
+                android:textColor="#8D6E63"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/BrowseforPdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse"
+                android:background="#8D6E63"
+                android:textSize="14dp"
+                android:textColor="#FFFF"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/AddBook"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Add book"
+            android:textSize="22sp"
+            android:background="#8D6E63"
+            android:textColor="#FFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+
+</LinearLayout>

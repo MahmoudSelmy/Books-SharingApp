@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Books</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="action_toggle">Toggle Side Panel</string>
+
+    <string name="drawer_item_first">First item</string>
+    <string name="drawer_item_second">Second item</string>
+    <string name="drawer_item_third">Third item</string>
+    <string name="drawer_item_fourth">Fourth item</string>
+    <string name="drawer_item_fifth">Fifth item</string>
+    <string name="drawer_item_sixth">Sixth item</string>
+    <string name="drawer_item_seventh">Seventh item</string>
+    <string name="drawer_item_eighth">Eighth item</string>
+    <string name="drawer_item_ninth">Ninth item</string>
+    <string name="drawer_item_tenth">Tenth item</string>
+    <string name="drawer_item_eleventh">Eleventh item</string>
+    <string name="drawer_item_twelfth">Twelfth item</string>
+
+
+</resources>

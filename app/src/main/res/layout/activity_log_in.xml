@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEBE9"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.techlap.booksharingapp.LogInActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/book4"
+        android:layout_marginBottom="20dp"/>
+
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:hint="enter your email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:layout_marginBottom="20dp"
+        android:background="#8D6E63"
+        android:textColor="#b9b8b4"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/signup_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account ?Sign Up"
+        android:textColor="#4b170f"/>
+
+
+</LinearLayout>

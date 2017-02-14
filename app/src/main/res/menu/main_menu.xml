@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="200"
+        android:title="My Profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_addBook"
+        android:orderInCategory="100"
+        android:title="Add Book"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_readlist"
+        android:orderInCategory="200"
+        android:title="My Readlist"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_signUp"
+        android:orderInCategory="200"
+        android:title="Log Out"
+        app:showAsAction="never"
+        />
+
+</menu>
